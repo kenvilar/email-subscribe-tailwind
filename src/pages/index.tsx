@@ -1,4 +1,5 @@
-// import Image from "next/image";
+import Image from "next/image";
+import SubscribeImage from "../assets/images/57-504x756.jpg";
 // import { Inter } from "next/font/google";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -9,10 +10,12 @@ export default function Home() {
       <div className="flex items-center justify-center h-screen bg-zinc-700">
         <div className="bg-zinc-800 p-2 mx-6 rounded-2xl">
           <div className="flex flex-col md:flex-row rounded-l-xl">
-            <img
-              src="https://picsum.photos/id/57/500/800"
-              alt=""
-              className="object-fill rounded-xl h-80 md:h-64 md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-200"
+            <Image
+              src={SubscribeImage}
+              width={504}
+              height={756}
+              alt="Subscribe Image"
+              className="object-cover rounded-xl h-80 md:h-64 md:w-52 md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-200"
             />
             <div className="p-6 md:p-12">
               <h2 className="font-serif text-xl font-medium text-center text-white md:text-left">
